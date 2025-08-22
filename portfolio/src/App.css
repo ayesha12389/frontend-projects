@@ -1,0 +1,125 @@
+/* Reset and base setup */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+  color: #f4f4f4;
+  scroll-behavior: smooth;
+  padding-top: 100px; /* to avoid navbar overlap */
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Background Icons Container */
+.icon-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.icon-background i {
+  position: absolute;
+  font-size: 40px;
+  opacity: 1;
+  /* color: #11e6d4; */
+  animation: floatIcons 15s linear infinite;
+}
+
+.icon-background i:nth-child(1) {
+  left: 10%;
+  top: 20%;
+  color: #ff6b6b; /* red-pink */
+  animation-delay: 0s;
+}
+
+.icon-background i:nth-child(2) {
+  left: 80%;
+  top: 30%;
+  color: #0ec9f8; /* blue */
+  animation-delay: 2s;
+}
+
+.icon-background i:nth-child(3) {
+  left: 40%;
+  top: 70%;
+  color: #f1c513; /* yellow */
+  animation-delay: 4s;
+}
+
+.icon-background i:nth-child(4) {
+  left: 25%;
+  top: 50%;
+  color: #00e676; /* green */
+  animation-delay: 6s;
+}
+
+.icon-background i:nth-child(5) {
+  left: 65%;
+  top: 10%;
+  color: #cc0f67; /* purple */
+  animation-delay: 8s;
+}
+
+@keyframes floatIcons {
+  0% {
+    transform: rotate(0deg) translateY(0);
+    opacity: 0.05;
+  }
+  50% {
+    transform: rotate(180deg) translateY(-20px);
+    opacity: 0.1;
+  }
+  100% {
+    transform: rotate(360deg) translateY(0);
+    opacity: 0.05;
+  }
+}
+
+/* Section Styling */
+.section {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.05);
+  margin: 2rem auto;
+  width: 90%;
+  max-width: 1100px;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.section:hover {
+  transform: scale(1.01);
+}
+
+/* Headings */
+h1, h2 {
+  color: #ffffff;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Links */
+a {
+  color: #00e6e6;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .section {
+    padding: 3rem 1rem;
+  }
+}

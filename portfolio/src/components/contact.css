@@ -1,0 +1,53 @@
+/* Contact Section Styling */
+.contact-section {
+  text-align: center;
+}
+
+.contact-subtitle {
+  font-size: 1.1rem;
+  color: #ccc;
+  margin-bottom: 2rem;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.1rem;
+  color: #f4f4f4;
+  transition: transform 0.3s ease;
+}
+
+.contact-item a {
+  color: #89cff0;
+  transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+  color: #00e6e6;
+  text-decoration: underline;
+}
+
+.contact-icon {
+  font-size: 1.3rem;
+  color: #00e6e6;
+}
+
+.contact-item:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .contact-info {
+    gap: 1rem;
+  }
+}

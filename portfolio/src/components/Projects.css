@@ -1,0 +1,112 @@
+/* .projects-section {
+  padding: 4rem 3rem;
+  background-color: #0a0a0a;
+} */
+
+.section-title {
+  font-size: 2.5rem;
+  color: #eef8f8;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.projects-container {
+  display: grid;
+    padding: 7rem 6rem;
+
+  grid-template-columns: repeat(3, 1fr); /* Always 3 columns */
+  gap: 3rem;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: 20px;
+  color: #ffffff;
+  box-shadow: 0 8px 24px rgba(0, 230, 230, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 28px rgba(0, 230, 230, 0.25);
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-header h3 {
+  font-size: 1.4rem;
+  color: #00e6e6;
+  font-weight: bold;
+}
+
+.github-icon {
+  color: #fff;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.github-icon:hover {
+  color: #00e6e6;
+}
+
+.project-desc {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #e0e0e0;
+  line-height: 1.5;
+}
+
+.project-tech {
+  margin-top: 1.2rem;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.project-tech span {
+  font-size: 1.3rem;
+  transition: transform 0.2s;
+}
+
+.project-tech span:hover {
+  transform: scale(1.2);
+}
+
+/* Tech colors */
+.project-tech span svg:nth-child(1) { color: #e44d26; }   /* HTML */
+.project-tech span svg:nth-child(2) { color: #264de4; }   /* CSS */
+.project-tech span svg:nth-child(3) { color: #f0db4f; }   /* JavaScript */
+.project-tech span svg:nth-child(4) { color: #61dafb; }   /* React */
+
+/* Fade animation */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fadeUp 1s ease forwards;
+  animation-delay: 0.2s;
+  opacity: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .projects-container {
+    grid-template-columns: 1fr;
+  }
+}
