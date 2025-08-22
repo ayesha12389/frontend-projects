@@ -1,0 +1,103 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.navbar {
+    background-color: #68d9c7;
+}
+
+.navbar-brand, .nav-link {
+    color: #fff !important;
+}
+
+.navbar .nav-link:hover {
+    color: #e65c00 !important;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #68d9c7;
+    margin-bottom: 20px;
+}
+
+.btn-custom {
+    background: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.btn-custom:hover {
+    background: #e65c00;
+    transform: scale(1.1);
+}
+
+.dynamic-content img {
+    max-width: 30%;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+.section {
+    background: #ffffff;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.section h3 {
+    color: #68d9c7;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.section p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.section img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+}
+.footer {
+font-size: 0.9rem;
+}
+
+.footer h5 {
+font-size: 1.1rem;
+font-weight: bold;
+}
+
+.footer a {
+text-decoration: none;
+transition: color 0.3s ease;
+}
+
+.footer a:hover {
+color: #68d9c7;
+}
+
+.footer .bi {
+font-size: 1.2rem;
+}
+
+.footer .input-group input {
+border-radius: 20px 0 0 20px;
+}
+
+.footer .input-group .btn {
+border-radius: 0 20px 20px 0;
+}

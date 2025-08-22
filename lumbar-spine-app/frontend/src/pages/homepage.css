@@ -1,0 +1,271 @@
+
+.navbar-brand, .nav-link {
+    color: #fff !important;
+}
+.navbar {
+    background-color: #68d9c7 !important;
+}
+
+.hero {
+    background: linear-gradient(180deg, #68d9c7 0%, #83e8d7 10%, #9ae8db 20%, #f8fcfd 100%);
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+    position: relative;
+}
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.hero p {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+.hero a {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+.section-title {
+    color: #68d9c7;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+.upload-section {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 50px 30px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.upload-section .upload-form {
+    flex: 1;
+}
+.upload-form{
+    margin-right: 20px !important;
+}
+.upload-section .image-preview {
+    flex: 1;
+    text-align: center;
+}
+.upload-section img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.upload-section input {
+    margin-bottom: 20px;
+}
+.upload-button {
+    background-color: #ff6600;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.upload-button:hover {
+    background-color: #e65c00;
+}
+.features-section {
+    background-color: #f1f8ff;
+    padding: 50px 20px;
+}
+.features-section .feature {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.features-section .icon {
+    font-size: 2rem;
+    color: #68d9c7;
+    margin-right: 20px;
+}
+.features-section h4 {
+    font-size: 1.5rem;
+    color: #68d9c7;
+    margin-bottom: 5px;
+}
+.section-title {
+text-align: center;
+font-size: 2.5rem;
+font-weight: bold;
+color: #68d9c7;
+margin-bottom: 20px;
+}
+
+.nav-tabs {
+border-bottom: none;
+justify-content: center;
+}
+
+.nav-tabs .nav-link {
+color: #333 !important; /* Darker color for better visibility */
+font-weight: bold;
+font-size: 1rem;
+border: none;
+margin: 0 10px;
+background-color: #f8f9fa; /* Light background for better contrast */
+}
+
+.nav-tabs .nav-link.active {
+color: #68d9c7 !important; /* Highlighted active color */
+background-color: #e6f2ff; /* Light blue background for active tab */
+border-bottom: 3px solid #68d9c7;
+}
+
+.hero-button{
+    background-color: #68d9c7;
+    border:solid 1px #68d9c7 ;
+}
+.hero-button:hover{
+    background-color: #f8fcfd;
+    color: #68d9c7 ;
+     border:solid 1px #68d9c7 ;
+}
+.card {
+background-color: white;
+
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+padding: 20px;
+}
+
+.card img {
+width: 100%;
+
+border-radius: 8px;
+margin-bottom: 20px;
+}
+
+.card-title {
+font-size: 1.8rem;
+font-weight: bold;
+color: #333;
+margin-bottom: 10px;
+}
+
+.card ul {
+list-style-type: none;
+padding: 0;
+}
+
+.card ul li {
+font-size: 1rem;
+color: #555;
+margin-bottom: 8px;
+display: flex;
+align-items: center;
+}
+
+
+
+.tab-content {
+margin-top: 20px;
+}
+.service-card {
+background-color: #ffffff;
+border: 1px solid #ddd;
+border-radius: 8px;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.service-card:hover {
+transform: scale(1.05);
+box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+font-size: 3rem;
+color: #68d9c7;
+}
+
+.service-title {
+font-size: 1.5rem;
+font-weight: bold;
+margin-top: 10px;
+color: #333;
+}
+
+.service-description {
+font-size: 1rem;
+color: #555;
+margin-top: 10px;
+}
+
+
+.footer {
+font-size: 0.9rem;
+}
+
+.footer h5 {
+font-size: 1.1rem;
+font-weight: bold;
+}
+
+.footer a {
+text-decoration: none;
+transition: color 0.3s ease;
+}
+
+.footer a:hover {
+color: white !important;
+}
+
+.footer .bi {
+font-size: 1.2rem;
+}
+
+.footer .input-group input {
+border-radius: 20px 0 0 20px;
+}
+
+.footer .input-group .btn {
+border-radius: 0 20px 20px 0;
+}
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .hero-subtitle {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .hero-button {
+    width: 100%;
+    font-size: 16px;
+  }
+.upload-form {
+  
+      margin-bottom: 20px;
+    
+}
+  .upload-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .classification-card .row {
+    flex-direction: column;
+  }
+
+  .service-card {
+    margin-bottom: 20px;
+  }
+
+  .footer .row {
+    flex-direction: column;
+    text-align: center;
+  }
+}
