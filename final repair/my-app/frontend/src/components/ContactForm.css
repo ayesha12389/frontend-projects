@@ -1,0 +1,67 @@
+.contact-form-section {
+    background-color: #f9f9f9;
+  }
+  
+  .contact-form-section .form-label {
+    font-weight: bold;
+    font-size: 0.95rem;
+    color: #0a3d62;
+  }
+  
+  .contact-form-section .form-control {
+    border-radius: 5px;
+  }
+  
+  .contact-form-section .btn {
+    padding: 8px 20px;
+    font-weight: bold;
+  }
+  .contact-form-section .btn:hover{
+    background-color: #0a3d62;
+  }
+  /* Contact Form Section Styling */
+.contact-form-section {
+    background-color: #f9f9f9;
+  }
+  
+  .contact-form-section .form-label {
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  .contact-form-section .form-control {
+    height: 50px; 
+    padding: 10px 15px;
+    font-size: 1rem; 
+    border-radius: 8px; 
+  }
+  
+  .contact-form-section textarea.form-control {
+    height: 150px;
+    resize: none; 
+  }
+  
+  .contact-form-section .btn {
+    min-height: 48px; /* Consistent button height */
+    padding: 10px 50px; /* Consistent padding */
+    font-size: 1rem; /* Readable font size */
+  }
+  
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .contact-form-section .form-control {
+      height: 45px; 
+      font-size: 0.9rem;
+    }
+  
+    .contact-form-section textarea.form-control {
+      height: 120px;
+    }
+  
+    .contact-form-section .btn {
+      padding: 10px 20px;
+      font-size: 0.9rem;
+    }
+  }
+  

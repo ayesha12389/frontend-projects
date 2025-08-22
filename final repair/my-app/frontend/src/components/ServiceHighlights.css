@@ -1,0 +1,124 @@
+/* Section Styling */
+.service-highlights {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 2rem;
+  }
+  .service-highlights h2{
+    color: #0a3d62;
+  }
+  
+  /* Card Styling */
+  .card {
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative; /* Enable positioning for overlay and button */
+    overflow: hidden; /* Ensure overlay stays within card bounds */
+  }
+  
+  .card:hover {
+    transform: translateY(-5px); /* Slight lift effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Add subtle shadow */
+  }
+  
+  /* Overlay Effect */
+  .card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(10, 61, 98, 0.8); /* Blue overlay with transparency */
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s ease; /* Smooth fade-in on hover */
+    z-index: 1; /* Place it above the image but below the content */
+  }
+  
+  .card:hover::before {
+    opacity: 1; /* Show the overlay on hover */
+  }
+  
+  /* Button Styling */
+  .browse-btn {
+    position: absolute;
+    bottom: 40%; /* Move the button higher */
+    left: 50%;
+    transform: translateX(-50%); /* Center the button horizontally */
+    background-color: #ffc107; /* Attractive yellow button */
+    color: white; /* Dark blue text for contrast */
+    font-size: 0.8rem; /* Increase font size */
+    font-weight: bold;
+    text-transform: uppercase; /* Uppercase text */
+    padding: 10px 14px; /* Padding around the button */
+    border: none;
+    border-radius: 25px; /* Fully rounded button */
+    cursor: pointer;
+    z-index: 2; /* Ensure the button appears above the overlay */
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for button */
+  }
+  
+  .card:hover .browse-btn {
+    opacity: 1; /* Show the button on hover */
+    transform: translate(-50%, -85px); /* Slight upward movement for animation */
+  }
+  
+  .browse-btn:hover {
+    background-color: #0a3d62; /* Change to blue on hover */
+    color: #ffffff; /* White text on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+  }
+  
+  
+  /* Image Styling */
+  .card-img-top {
+    height: 150px; /* Uniform image height */
+    object-fit: cover; /* Ensure images are fully visible */
+  }
+  
+ /* Progress Bar Styling */
+/* Progress Bar Styling */
+.progress {
+  background-color: #e0e0e0; /* Lighter background for the progress bar container */
+  border-radius: 8px;
+  height: 13px; /* Increased height for better visibility */
+  width: 80%; /* Ensure it spans the full width of the container */
+}
+
+.progress-bar {
+  background-color: #0a3d62; /* Custom blue color for the progress bar */
+  transition: width 1.5s ease; /* Smooth fill animation */
+  border-radius: 8px;
+  color: white;
+  text-align: center;
+  line-height: 16px; /* Align text vertically inside the bar */
+  font-weight: bold;
+  width: 0%; /* Initial width */
+}
+
+  
+  /* Typography */
+  .card-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card-text {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #6c757d;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .card-img-top {
+      height: 180px;
+    }
+  
+    .browse-btn {
+      bottom: 20%; /* Adjust for smaller screens */
+    }
+  }
+  

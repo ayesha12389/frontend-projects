@@ -1,0 +1,100 @@
+/* InfoCards Container */
+.info-cards {
+  margin-top: 50px;
+  z-index: 3;
+  position: relative;
+}
+
+/* Card Styles */
+.card {
+  position: relative; /* Required for overlay effect */
+  overflow: hidden; /* Ensures the hover effect stays within card boundaries */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+  background-color: white;
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Lifts the card on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Deepens shadow on hover */
+}
+
+/* Blue Transparent Overlay */
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(10, 61, 98, 0.7); /* Semi-transparent blue overlay */
+  opacity: 0; /* Initially hidden */
+  pointer-events: none; /* Ensure overlay doesn't block interaction */
+  transition: opacity 0.3s ease; /* Smooth fade-in effect */
+  z-index: 1; /* Places overlay below the text and icon */
+}
+
+.card:hover::before {
+  opacity: 1; /* Show overlay on hover */
+}
+
+/* Icon Styling */
+.icon {
+  font-size: 3rem; /* Large size for the icon */
+  color: #0a3d62; /* Default icon color */
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 2; /* Ensure icon stays above the overlay */
+  transition: color 0.3s ease; /* Smooth color change on hover */
+  display: inline-block; /* Ensure the icon is treated as an element */
+}
+
+.card .icon {
+  color: #0a3d62 !important; /* Ensure default icon color is applied */
+}
+
+.card:hover .icon {
+  color: #ffc107 !important; /* Changes to the hover color */
+}
+
+/* Card Title */
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #0a3d62;
+  position: relative;
+  z-index: 2; /* Stays above the overlay */
+  transition: color 0.3s ease;
+}
+
+.card:hover .card-title {
+  color: white; /* Changes to white on hover */
+}
+
+/* Card Text */
+.card-text {
+  font-size: 0.95rem;
+  color: black;
+  position: relative;
+  z-index: 2; /* Stays above the overlay */
+  transition: color 0.3s ease;
+}
+
+.card:hover .card-text {
+  color: white; /* Changes to white on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .info-cards {
+    margin-top: 20px; /* Adjust margin for smaller screens */
+  }
+
+  .card {
+    margin-bottom: 1rem; /* Add spacing between stacked cards */
+  }
+
+  .icon {
+    font-size: 2.5rem; /* Adjust icon size for smaller screens */
+  }
+}

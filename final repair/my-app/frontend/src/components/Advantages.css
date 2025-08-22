@@ -1,0 +1,109 @@
+/* Section Styling */
+.advantages-section {
+  background-color: #f8f9fa;
+  padding: 3rem 1.5rem;
+}
+
+/* Section Header */
+.advantages-section p.text-custom {
+  color: #0a3d62; /* Custom dark blue */
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.advantages-section h2 {
+  font-size: 2.5rem;
+  color: #0a3d62;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+/* Advantage Card */
+.advantage-card {
+  background-color: #0a3d62;
+  border: none;
+  border-radius: 8px; /* Rounded corners */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 1.5rem; /* Padding inside the card */
+  display: flex; /* Flex layout for icon and text */
+  align-items: center; /* Vertical alignment */
+  height: 100%; /* Ensures equal height for all cards */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.advantage-card:hover {
+  transform: translateY(-5px); /* Lift effect */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Add subtle shadow */
+}
+
+/* Icon Container for Square Background */
+.icon-container {
+  background-color: #ffc107; /* Yellow background for icons */
+  width: 70px; /* Fixed size for square box */
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px; /* Slight rounding for modern design */
+  margin-right: 1rem; /* Space between icon and text */
+  flex-shrink: 0; /* Prevent icon from shrinking */
+}
+
+.advantage-icon {
+  font-size: 2rem; /* Adjust icon size */
+  color: #ffffff; /* Icon color */
+}
+
+/* Typography */
+.advantage-card h5 {
+  font-size: 1.2rem;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.advantage-card p {
+  font-size: 0.95rem;
+  color: #d1d8e0; /* Lightened white for better contrast */
+  margin: 0; /* Removes extra margin */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .advantages-section h2 {
+    font-size: 2rem;
+  }
+
+  .icon-container {
+    width: 50px;
+    height: 50px;
+  }
+
+  .advantage-icon {
+    font-size: 1.5rem;
+  }
+
+  .advantage-card {
+    padding: 1rem; /* Adjust padding for smaller screens */
+    flex-direction: column; /* Stack icon and text vertically */
+    text-align: center; /* Center align text */
+  }
+
+  .icon-container {
+    margin-bottom: 1rem; /* Add space below the icon */
+    margin-right: 0; /* Remove right margin since layout is stacked */
+  }
+}
+
+@media (max-width: 576px) {
+  .advantages-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .advantage-card {
+    padding: 1rem;
+  }
+
+  .advantage-icon {
+    font-size: 1.3rem;
+  }
+}

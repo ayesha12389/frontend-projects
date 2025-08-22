@@ -1,0 +1,83 @@
+
+.job-filter {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .job-filter .filter-header {
+    font-weight: bold;
+  }
+  
+  .job-filter .search-bar input {
+    border: 1px solid #ddd;
+    padding: 8px 15px;
+  }
+  
+  .job-filter ul {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .job-filter li {
+    border: none;
+    transition: background-color 0.2s;
+  }
+  
+  .job-filter li:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+  }
+  
+  
+  .current-jobs  {
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  .row {
+  margin: 0 !important;
+  padding: 0 !important;
+  gap: 0px !important; /* Explicitly control spacing */
+}
+
+
+  
+  .card-img-top {
+    border-radius: 8px;
+    max-height: 150px;
+    object-fit: cover;
+  }
+
+  
+  
+  .current-jobs .card {
+    border: none;
+    background-color: white;
+  }
+  .card {
+    position: relative;
+    padding: 10px;
+  margin: 5px auto; /* Ensure consistent margin */
+  }
+  
+  .card .btn {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .card .btn:hover {
+    transform: scale(1.05);
+  }
+  
+  .card .dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    padding: 10px;
+  }
+   
+    

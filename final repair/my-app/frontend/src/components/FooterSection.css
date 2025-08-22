@@ -1,0 +1,35 @@
+.footer-section {
+    background-color: #0a3d62;
+  }
+  
+  .footer-section h5 {
+    color: #ffffff;
+  }
+  
+  .footer-section p {
+    color: #d1d1d1;
+    font-size: 0.9rem;
+  }
+  
+  .footer-section a {
+    color: #d1d1d1;
+  }
+  
+  .footer-section a:hover {
+    color: #ffc107;
+    text-decoration: none;
+  }
+  
+  .footer-bottom {
+    color: #b0b0b0;
+    font-size: 0.9rem;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+  }
+  
+  .footer-section .bi-chevron-right {
+    color: #ffc107;
+  }
+  

@@ -1,0 +1,138 @@
+/* General Section Styling */
+.image-section {
+  position: relative;
+  height: 300px; /* Adjust height as needed */
+  background: url('/src/assets/bg2.webp') no-repeat center center; /* Replace with your actual image path */
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Black overlay with transparency */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-content {
+  position: relative;
+  z-index: 2; /* Ensure text is above the overlay */
+}
+
+.image-title {
+  font-size: 2.5rem; /* Large title */
+  font-weight: bold;
+  color: white;
+  margin: 0;
+}
+
+.image-subtitle {
+  font-size: 1.2rem; /* Subtitle */
+  color: #ffc107; /* Yellow color for subtitle */
+  margin: 10px 0 0;
+}
+
+.services-page {
+    font-family: "Arial", sans-serif;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #0a3d62;
+    margin-bottom: 1rem;
+  }
+  
+  .section-description {
+    font-size: 1.2rem;
+    color: #6c757d;
+    margin-bottom: 2rem;
+  }
+  
+  /* Card Styling */
+  .service-card {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    display: flex; /* Enables flexbox */
+    flex-direction: column; /* Stack content vertically */
+    justify-content: space-between; /* Push button to the bottom */
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Ensure text is centered */
+    padding: 15px; /* Add padding for spacing inside the card */
+  }
+  
+  .service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-img-top {
+    width: 100%; /* Full-width image */
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px; /* Ensure consistency with the card */
+  }
+  
+  /* Button Styling */
+  .repair-request-btn {
+    display: block; /* Make the button visible */
+    margin-top: 10px; /* Add some spacing above the button */
+    padding: 10px 20px;
+    width: 150px;
+    font-size: 14px;
+    background-color: #ffc107; /* Yellow button */
+    color: white;
+    border: none;
+    border-radius: 50px; /* Rounded button */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+  }
+  
+  .repair-request-btn:hover {
+    background-color: #ff9f1a; /* Slightly darker yellow on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+  }
+  
+  .card-body {
+    display: flex; /* Enables flexbox inside the card body */
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Centers all content horizontally */
+    justify-content: center; /* Centers all content vertically */
+    height: 100%; /* Ensures the card body takes up remaining space */
+    text-align: center; /* Center-aligns text */
+  }
+  
+  .card-body h5 {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .card-body p {
+    margin: 5px 0;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .service-card img {
+      height: 150px;
+    }
+  
+    .section-title {
+      font-size: 2rem;
+    }
+  
+    .section-description {
+      font-size: 1rem;
+    }
+  }
+  
+  

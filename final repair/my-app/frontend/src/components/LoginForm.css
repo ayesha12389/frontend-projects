@@ -1,0 +1,33 @@
+/* Technician Dashboard CSS */
+.technician-dashboard .profile-pic {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+  }
+  
+  .stats .stat-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .assigned-jobs .list-group-item {
+    border: none;
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+  }
+  
+  .list-group-item .badge {
+    font-size: 0.9rem;
+  }
+  
+  .quick-actions .btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+  

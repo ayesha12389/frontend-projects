@@ -1,0 +1,68 @@
+/* Section Styling */
+.technician-section {
+    background-color: #f8f9fa;
+  }
+  
+  /* Section Header */
+  .technician-section .text-custom {
+    color: #ff6600; /* Custom orange */
+    font-weight: bold;
+  }
+  
+  .technician-section h2 {
+    font-size: 2.5rem;
+    color: #0a3d62;
+    font-weight: bold;
+  }
+  
+  /* Technician Card */
+  .technician-card {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+  }
+  
+  .technician-card:hover {
+    transform: translateY(-10px); /* Hover lift */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Image Container */
+  .image-container {
+    position: relative;
+    margin-bottom: 1rem;
+  }
+  
+  .technician-image {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border: 5px solid #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  
+  /* Card Body */
+  .technician-card h5 {
+    font-size: 1.25rem;
+    color: #0a3d62;
+    font-weight: bold;
+  }
+  
+  .technician-card p {
+    font-size: 0.9rem;
+    color: #6c757d;
+    margin-bottom: 0;
+  }
+  
+  /* Swiper Navigation (optional) */
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: #0a3d62; /* Custom dark blue */
+  }
+  

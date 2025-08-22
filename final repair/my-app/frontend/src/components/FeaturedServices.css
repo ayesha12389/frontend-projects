@@ -1,0 +1,113 @@
+/* Section Styling */
+.featured-smart-services {
+    background-color: #20364b; /* Matches the dark blue section background */
+    border-radius: 8px;
+    padding: 3rem 1rem; /* Adds padding around the section */
+  }
+  
+  /* Left Side Content Animation */
+  .featured-smart-services h2,
+  .featured-smart-services p {
+    opacity: 0; /* Initially hidden */
+    transform: translateX(-20px); /* Slightly shifted left */
+    animation: fadeIn 1s ease forwards; /* Apply fade-in animation */
+  }
+  
+  .featured-smart-services h2 {
+    animation-delay: 0.2s; /* Delay for the heading */
+  }
+  
+  .featured-smart-services p {
+    animation-delay: 0.4s; /* Delay for the paragraph */
+  }
+  
+  /* Keyframes for Fade-in Animation */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateX(-20px); /* Start slightly to the left */
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0); /* Set to original position */
+    }
+  }
+  
+  /* Service Boxes */
+  .service-box {
+    background-color: #2a4b63; /* Slightly lighter background for service cards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth hover effects */
+    position: relative; /* Required for overlay positioning */
+    overflow: hidden; /* Ensure overlay stays within the box */
+  }
+  
+  /* Hover Effects for Service Box */
+  .service-box:hover {
+    transform: translateY(-5px); /* Lifts the box slightly */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Deepens shadow on hover */
+  }
+  
+  /* Icon Container */
+  .icon-container {
+    background-color: #ffc107; /* Yellow background for icons */
+    width: 80px; /* Fixed size for icon container */
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px; /* Rounded corners for the container */
+    z-index: 1; /* Ensure icons stay above overlay */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth hover animation */
+  }
+  
+  /* Icon Animation on Hover */
+  .icon-container:hover {
+    transform: scale(1.3); /* Enlarge icon container on hover */
+    background-color: #0a58ca; /* Change background color to blue on hover */
+  }
+  
+  /* Service Icon Styling */
+  .service-icon {
+    width: 40px; /* Icon size */
+    height: 40px;
+    object-fit: contain; /* Ensures proper scaling of icons */
+    transition: transform 0.3s ease; /* Smooth hover animation for the icon */
+  }
+  
+  /* Icon Animation */
+  .icon-container:hover .service-icon {
+    transform: rotate(360deg); /* Rotate the icon on hover */
+  }
+  
+  /* Typography */
+  .featured-smart-services h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    z-index: 1; /* Ensure text stays above overlay */
+  }
+  
+  .featured-smart-services p {
+    font-size: 0.9rem;
+    color: #d1d8e0; /* Muted white text for description */
+    z-index: 1; /* Ensure text stays above overlay */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .featured-smart-services {
+      text-align: center;
+    }
+  
+    .service-box {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .icon-container {
+      margin-bottom: 1rem;
+    }
+  }
+  

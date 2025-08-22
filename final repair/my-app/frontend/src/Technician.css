@@ -1,0 +1,220 @@
+/* Global Styles */
+.dashboard-container {
+  display: flex;
+  flex-wrap: nowrap;
+  min-height: 100vh;
+  background-color: #f4f5f7;
+  font-family: Arial, sans-serif;
+}
+
+/* Sidebar */
+.sidebar2 {
+  width: 260px;
+  background-color: #0a3d62;
+  padding: 20px;
+  color: white;
+  height: 200vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.sidebar-logo {
+  width: 68px;
+  height: 68px;
+  /* margin: 0 auto 15px; */
+}
+.logo-container{
+  display: flex;
+  padding-right: 10px;
+}
+
+.sidebar-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  margin-top: 10px;
+
+}
+
+.menu-item {
+  margin: 10px 0;
+  padding: 10px 15px;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+.menu-item:hover,
+.menu-item.active {
+  background-color: #ffc107;
+}
+
+.sidebar-footer {
+  position: absolute;
+  bottom: 20px;
+  width: calc(100% - 40px);
+}
+
+/* Profile Icon */
+.profile-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* Main Content */
+.main-content {
+  flex-grow: 1;
+  margin-left: 250px;
+  padding: 20px;
+  transition: margin-left 0.3s ease;
+}
+
+/* Top Bar */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.topbar input {
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Technician Overview */
+.technician-overview {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Table */
+.table {
+  margin-bottom: 0;
+}
+
+/* .table th,
+.table td {
+  white-space: nowrap;
+} */
+
+/* Pagination */
+.pagination .btn {
+  min-width: 40px;
+}
+/* Notification and Chat Icons */
+.icon-wrapper {
+  position: relative;
+}
+
+.icon-wrapper::after {
+  content: attr(data-count); /* Display the count */
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  background-color: #ffc107; /* Red color for the badge */
+  color: white;
+  font-size: 0.75rem;
+  font-weight: bold;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+.text-end .btn{
+  background-color:#ffc107;
+  color: white;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .sidebar2 {
+    width: 100%;
+    height: 67px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    padding: 10px 0;
+  }
+
+  .main-content {
+    margin-left: 0;
+    margin-top: 60px; /* Adjust for the height of the horizontal sidebar */
+    padding-top: 20px;
+  }
+
+  .topbar {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .topbar input {
+    width: 100%;
+  }
+
+  .technician-overview {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 769px) {
+  .sidebar-logo {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+  }
+
+  .sidebar-title {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    margin-top: 10px;
+  }
+
+  .menu-item {
+    display: none;
+  }
+
+  .main-content {
+    margin-top: 50px;
+  }
+  .logo-container {
+    display: flex; /* Use Flexbox to align items in a row */
+    align-items: center; /* Vertically align logo and text */
+    justify-content: center; /* Center the content horizontally */
+    gap: 10px; /* Add spacing between the logo and text */
+    margin-bottom: 20px;
+  }
+  
+  .sidebar-logo {
+    width: 48px; /* Adjust the size as needed */
+    height: 48px;
+  }
+  
+  .sidebar-title {
+    font-size: 1.3rem; /* Adjust for visibility */
+    font-weight: bold;
+    color: white;
+  }
+  
+}

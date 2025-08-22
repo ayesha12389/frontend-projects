@@ -1,0 +1,31 @@
+.testimonials-section {
+    background-color: #f8f9fa;
+  }
+  .testimonials-section h2,h3{
+    color: #0a3d62;
+  }
+
+  .testimonial-card {
+    border-radius: 10px;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.7); /* Fallback for dark backgrounds */
+  }
+  
+  .testimonial-card p {
+    font-size: 1.1rem;
+    font-style: italic;
+    line-height: 1.5;
+  }
+  
+  .author-name {
+    font-weight: bold;
+    background-color: #0a3d62;
+  }
+  
+  .author-role {
+    font-weight: bold;
+  }
+  

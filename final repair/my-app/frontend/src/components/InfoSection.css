@@ -1,0 +1,56 @@
+.info-section img {
+    width: 150%; /* Expands the width beyond the container */
+    height: auto; /* Maintains the aspect ratio */
+    object-fit: cover; /* Ensures the image scales without distortion */
+    border-radius: 8px; /* Smooth edges */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow for impact */
+  }
+  
+  /* Heading Styling */
+  .info-section h1 {
+    color: #0a3d62; /* Dark blue color */
+    font-family: "Poppins", sans-serif; /* Modern font family */
+    font-size: 2.5rem; /* Larger and bolder text */
+    font-weight: 600;
+    letter-spacing: 1px; /* Adds spacing between letters */
+    margin-bottom: 1rem;
+    position: relative;
+    overflow: hidden;
+    animation: slide-in 1s ease-in-out; /* Adds a slide-in animation */
+  }
+  
+  /* Paragraph Styling */
+  .info-section p {
+    font-size: 1rem; /* Slightly larger text */
+    line-height: 1.8; /* Better readability */
+    color: #6c757d; /* Muted blue color */
+    font-family: "Roboto", sans-serif; /* Clean font family */
+    opacity: 0; /* Start hidden */
+    animation: fade-in 1.8s ease-in-out forwards; /* Fade-in animation */
+    animation-delay: 0.5s; /* Delay for smoother transition */
+  }
+  
+  /* Animation for Heading (Slide-in) */
+  @keyframes slide-in {
+    from {
+      transform: translateX(-100%); /* Starts off-screen */
+      opacity: 0; /* Invisible */
+    }
+    to {
+      transform: translateX(0); /* Slides to its original position */
+      opacity: 1; /* Becomes visible */
+    }
+  }
+  
+  /* Animation for Paragraph (Fade-in) */
+  @keyframes fade-in {
+    from {
+      opacity: 0; /* Hidden */
+      transform: translateY(10px); /* Starts slightly below */
+    }
+    to {
+      opacity: 1; /* Fully visible */
+      transform: translateY(0); /* Moves into place */
+    }
+  }
+  

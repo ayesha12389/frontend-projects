@@ -1,0 +1,13 @@
+/* Styling for Electrical Repair Section Images */
+.large-image {
+    width: 99%;
+    height: 320px;
+    object-fit: cover;
+  }
+  
+  .small-image {
+    width: 99%;
+    height: 145px;
+    object-fit: cover;
+  }
+  

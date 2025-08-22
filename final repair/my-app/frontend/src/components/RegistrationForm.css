@@ -1,0 +1,21 @@
+.registration-section {
+    background-color: #f8f9fa;
+  }
+  
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .btn-primary {
+    background-color: #0a3d62;
+    border: none;
+    transition: background-color 0.3s, transform 0.3s;
+    border-radius: 50px;
+  }
+  
+  .btn-primary:hover {
+    background-color: #064b8a;
+    transform: scale(1.05);
+  }
+  
