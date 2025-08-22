@@ -9,6 +9,7 @@ Each project is built with a clean UI, reusable components, and responsive desig
 
 1. **Portfolio Website**  
    A personal portfolio to showcase skills, education, and projects.
+   
 2.**Lumber Spine Project**  
    A React-based project focused on medical visualization and interface.
 
