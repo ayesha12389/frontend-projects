@@ -1,0 +1,11 @@
+/* src/Style/about.css */
+.about-section {
+  padding: 50px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.about-section h2 {
+  font-size: 2rem;
+  color: #0056b3;
+}
